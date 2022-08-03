@@ -123,12 +123,17 @@ a {
     background-color: var(--first-color);
 }
 
+.icon-nav {
+    font-size: 1.5rem;
+}
+
 .active {
     transition: all .3s;
     border-radius: 50%;
     color: #fff;
     background-color: var(--first-color);
 }
+
 
 
 /* Css home */
@@ -172,7 +177,7 @@ a {
 
 .home-info {
     font-size: var(--normal-font-size);
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -270,6 +275,10 @@ a {
 
 /* CSS skills */
 
+#skills {
+    background-image: url(https://iradesign.io/assets/img/path2.png);
+}
+
 
 .skills-infos {
     display: flex;
@@ -291,8 +300,16 @@ a {
     border: 1px solid var(--first-color);
     border-radius: 15px;
     margin: 20px;
+    background-color: var(--body-color);
+    transition: all 0.3s;
 }
 
+.skills-card:hover {
+    transition: all 0.3s linear;
+    cursor: pointer;
+    width: 310px;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
 .title-card {
     color: var(--first-color);
 }
@@ -305,6 +322,70 @@ a {
 
 .skills-list li {
     padding: 5px 20px;
+}
+
+.skills-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+
+}
+
+.img-tech {
+    margin: 10px 0;
+    width: 70px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.img-tech:hover {
+    transition: all .3s linear;
+    width: 80px;
+}
+
+/* CSS projects */
+
+#projects {
+    background-image: url('./img/blob-scene-haikei.svg');
+}
+
+.container-projects {
+    /* background-color: red; */
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
+    /* align-items: center;
+    transition: transform 0.5s ease-in-out;
+     */
+    /* transform: translateX(0); */
+}
+
+.project-card {
+    width: 250px;
+    /* border-radius: 15px;
+    border: 1px solid var(--first-color); */
+    min-width: 250px;
+    /* padding: 1rem; */
+    /* text-align: center;
+    margin: 0 10px; */
+}
+
+.img-project {
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-image: url('./img/path2.png') ;
 }
 
 
@@ -381,39 +462,3 @@ a {
 
 /* Animations */
 
-.shadow-pop-tr:hover {
-    cursor: pointer;
-	-webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-
-
- @-webkit-keyframes shadow-pop-tr {
-    0% {
-      -webkit-box-shadow: 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0;
-              box-shadow: 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0;
-      -webkit-transform: translateX(0) translateY(0);
-              transform: translateX(0) translateY(0);
-    }
-    100% {
-      -webkit-box-shadow: 1px -1px #6e57e0, 2px -2px #6e57e0, 3px -3px #6e57e0, 4px -4px #6e57e0, 5px -5px #6e57e0, 6px -6px #6e57e0, 7px -7px #6e57e0, 8px -8px #6e57e0;
-              box-shadow: 1px -1px #6e57e0, 2px -2px #6e57e0, 3px -3px #6e57e0, 4px -4px #6e57e0, 5px -5px #6e57e0, 6px -6px #6e57e0, 7px -7px #6e57e0, 8px -8px #6e57e0;
-      -webkit-transform: translateX(-8px) translateY(8px);
-              transform: translateX(-8px) translateY(8px);
-    }
-  }
-  @keyframes shadow-pop-tr {
-    0% {
-      -webkit-box-shadow: 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0;
-              box-shadow: 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0, 0 0 #6e57e0;
-      -webkit-transform: translateX(0) translateY(0);
-              transform: translateX(0) translateY(0);
-    }
-    100% {
-      -webkit-box-shadow: 1px -1px #6e57e0, 2px -2px #6e57e0, 3px -3px #6e57e0, 4px -4px #6e57e0, 5px -5px #6e57e0, 6px -6px #6e57e0, 7px -7px #6e57e0, 8px -8px #6e57e0;
-              box-shadow: 1px -1px #6e57e0, 2px -2px #6e57e0, 3px -3px #6e57e0, 4px -4px #6e57e0, 5px -5px #6e57e0, 6px -6px #6e57e0, 7px -7px #6e57e0, 8px -8px #6e57e0;
-      -webkit-transform: translateX(-8px) translateY(8px);
-              transform: translateX(-8px) translateY(8px);
-    }
-  }
-  
